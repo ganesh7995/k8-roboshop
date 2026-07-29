@@ -26,4 +26,4 @@ spec:
     spec:
       containers:
         - name: mangodb
-          image: mangodb:.
+          image: dockrhub/mangodb
