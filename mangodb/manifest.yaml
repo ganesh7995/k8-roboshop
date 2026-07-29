@@ -27,3 +27,23 @@ spec:
       containers:
         - name: mangodb
           image: dockrhub/mangodb
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mangodb
+  namespace: roboshop
+  labels:
+    component: mangodb
+    project: roboshop
+    teir: database
+spec:
+  selector:
+    component: mangodb
+    project: roboshop
+    teir: database
+  ports:
+  - protocol: TCP
+    port: 27017
+    targetPort: 27017
+
