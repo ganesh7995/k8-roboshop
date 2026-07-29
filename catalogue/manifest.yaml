@@ -21,6 +21,7 @@ metadata:
     project: roboshop
     teir: app
 spec:
+  replicas: 1
   selector:
     matchLabels:
       component: catalogue
