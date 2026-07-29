@@ -11,7 +11,7 @@ spec:
 # These are lebels replicaset use to create pod replicas, this should be match pod lebels
   replicas: 1
   selector:
-    matchLebels:
+    matchLabels:
       component: mangodb
       project: roboshop
       teir: database
