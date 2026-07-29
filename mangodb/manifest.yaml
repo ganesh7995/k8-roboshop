@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mangodb
+  # Deployment lebels
+  labels:
+    component: mangodb
+    project: roboshop
+    teir: database
+spec:
+# These are lebels replicaset use to create pod replicas, this should be match pod lebels
+  replicas: 1
+  selector:
+    matchLebels:
+      component: mangodb
+      project: roboshop
+      teir: database
+  # This is pod defination
+  template:
+    metadata:
+      labels:
+        component: mangodb
+        project: roboshop
+        teir: database
+    spec:
+      containers:
+        - name: mangodb
+          image: devopsgani/mangodb:v1
