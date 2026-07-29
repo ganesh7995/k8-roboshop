@@ -25,4 +25,4 @@ spec:
     spec:
       containers:
         - name: mangodb
-          image: devopsgani/mangodb:v1
+          image: joindevops/mangodb:v1
