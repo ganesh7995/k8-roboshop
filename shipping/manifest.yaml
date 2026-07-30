@@ -19,20 +19,20 @@ metadata:
   labels:
     component: shipping
     project: roboshop
-    teir: database
+    teir: app
 spec:
   replicas: 1
   selector:
     matchLabels:
       component: shipping
       project: roboshop
-      teir: database
+      teir: app
   template:
     metadata:
       labels:
         component: shipping
         project: roboshop
-        teir: database
+        teir: app
     spec:
       containers:
       - name: shipping
@@ -49,12 +49,12 @@ metadata:
   labels:
     component: shipping
     project: roboshop
-    teir: database
+    teir: app
 spec:
   selector:
     component: shipping
     project: roboshop
-    teir: database
+    teir: app
   ports:
   - protocol: TCP
     port: 8080
