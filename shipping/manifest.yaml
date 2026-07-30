@@ -6,7 +6,7 @@ metadata:
   labels:
     component: shipping
     project: roboshop
-    teir: app
+    teir: databse
 data:
   CART_ENDPOINT: "cart:8080"
   DB_HOST: "mysql"
@@ -19,20 +19,20 @@ metadata:
   labels:
     component: shipping
     project: roboshop
-    teir: app
+    teir: database
 spec:
   replicas: 1
   selector:
     matchLabels:
       component: shipping
       project: roboshop
-      teir: app
+      teir: database
   template:
     metadata:
       labels:
         component: shipping
         project: roboshop
-        teir: app
+        teir: database
     spec:
       containers:
       - name: shipping
@@ -49,12 +49,12 @@ metadata:
   labels:
     component: shipping
     project: roboshop
-    teir: app
+    teir: database
 spec:
   selector:
     component: shipping
     project: roboshop
-    teir: app
+    teir: database
   ports:
   - protocol: TCP
     port: 8080
