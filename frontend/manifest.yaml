@@ -99,10 +99,10 @@ spec:
       - name: frontend
         image: joindevops/frontend:v1
         volumeMounts:
-          - name: nginx-conf
-            mountPath: /etc/nginx/nginx.conf
-            subpath: nginx.conf
-            readOnly: true
+        - name: nginx-conf
+          mountPath: /etc/nginx/nginx.conf
+          subpath: nginx.conf
+          readOnly: true
       volumes:
         - name: nginx-conf
           configMap:
