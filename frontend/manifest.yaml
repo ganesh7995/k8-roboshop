@@ -11,7 +11,7 @@
 #   CART_ENDPOINT: "cart:8080"
 #   DB_HOST: "mysql"
 ---
-apiVersion: webs/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
